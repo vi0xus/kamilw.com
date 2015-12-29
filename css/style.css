@@ -197,6 +197,7 @@ button {
 			margin-bottom: 10px;
 			text-align: center;
 			text-transform: none;
+			letter-spacing: 1px;
 		}
 			a.button.large > h3 > i {
 				float: left;
