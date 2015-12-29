@@ -203,6 +203,7 @@ button {
 				float: left;
 			}
 		a.button.large > p {
+			font-family: 'Roboto';
 			white-space: normal;
 			line-height: 20px;
 			font-size: 14px;
@@ -210,6 +211,7 @@ button {
 			text-transform: none;
 			margin-bottom: 0;
 			text-align: left;
+			letter-spacing: 0.2px;
 		}
 			a.button.large > p > i {
 				color: #1EAEDB;
