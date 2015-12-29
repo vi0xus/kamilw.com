@@ -642,6 +642,7 @@ ul.nav {
 			margin-bottom: 0;
 			font-size: 12px;
 			cursor: default;
+			letter-spacing: 0.2px;
 		}
 		.footer .footer-bottom a.topthetop {
 			margin-top: 15px;
