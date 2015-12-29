@@ -189,7 +189,8 @@ button {
 		margin-bottom: 7px;
 	}
 		a.button.large:hover {
-			border-color: #333;
+			border-color: #252525;
+			background-image: url('../images/scratches.png');
 		}
 		a.button.large > h3 {
 			font-size: 22px;
@@ -198,6 +199,9 @@ button {
 			text-align: center;
 			text-transform: none;
 			letter-spacing: 1px;
+		}
+		a.button.large:hover > h3 {
+			color: #fff;
 		}
 			a.button.large > h3 > i {
 				float: left;
@@ -212,6 +216,9 @@ button {
 			margin-bottom: 0;
 			text-align: left;
 			letter-spacing: 0.2px;
+		}
+		a.button.large:hover > p {
+			color: #fff;
 		}
 			a.button.large > p > i {
 				color: #1EAEDB;
