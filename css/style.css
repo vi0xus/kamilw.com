@@ -21,10 +21,10 @@ body {
 		font-size: 16px;
 		line-height: 38px;
 		margin-bottom: 0;
-		color: #fff;
+		color: rgba(255, 255, 255, 0.6);
 		text-transform: uppercase;
 		cursor: default;
-		letter-spacing: 0.1px;
+		letter-spacing: 1px;
 	}
 	.linkbox a.button {
 		float: right;
@@ -262,12 +262,17 @@ button {
 	.row.collapsed .row.collapsed > .one-third.column {
 		width: 216.66px;
 	}
-
 	.row.collapsed .four.columns {
 		width: 250px;
 	}
 	.row.collapsed .eight.columns {
 		width: 743px;
+	}
+	.row.collapsed .five.columns {
+		width: 300px;
+	}
+	.row.collapsed .seven.columns {
+		width: 693px;
 	}
 
 
@@ -369,6 +374,16 @@ ul.nav {
 		}
 		ul.nav > li.dropdown > form.panel button {
 			width: 100%;
+		}
+		ul.nav > li.dropdown > form.panel .links {
+			text-align: right;
+		}
+		ul.nav > li.dropdown > form.panel .links a {
+			color: #e3e3e3;
+			text-decoration: none;
+		}
+		ul.nav > li.dropdown > form.panel .links a:hover {
+			text-decoration: underline;
 		}
 	ul.nav > li.dropdown > ul.panel > li {
 		list-style: none;
