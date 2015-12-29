@@ -368,6 +368,7 @@ button {
 		background-image: url('../images/logo-white.png');
 		background-position: 0px 0px;
 		background-repeat: no-repeat;
+		letter-spacing: 0.5px;
 	}
 		.logo-wrapper .logo.blue {
 			background-image: url('../images/logo-blue.png');
@@ -556,7 +557,7 @@ ul.nav {
 	}
 		.homepage-gallery .arrows .arrow {
 			position: relative;
-			font-size: 90px;
+			font-size: 55px;
 			line-height: 90px;
 			color: #fff;
 			padding: 10px;
@@ -564,11 +565,11 @@ ul.nav {
 			color: #555;
 		}
 			.homepage-gallery .arrows .arrow.prev {
-				left: -51px;
+				left: -41px;
 				float: left;
 			}
 			.homepage-gallery .arrows .arrow.next {
-				right: -51px;
+				right: -41px;
 				float: right;
 			}
 
