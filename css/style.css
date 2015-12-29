@@ -255,29 +255,29 @@ button {
 					color: #fff;
 				}
 
-		a.button.large.green {
+		a.button.large.purple {
 			background-color: #fff;
-			border-color: #19803b;
+			border-color: #9a59b5;
 		}
-		a.button.large.green:hover {
-			background-color: #19803b;
+		a.button.large.purple:hover {
+			background-color: #9a59b5;
 		}
-			a.button.large.green > h3 {
-				color: #19803b;
+			a.button.large.purple > h3 {
+				color: #9a59b5;
 			}
-			a.button.large.green:hover > h3 {
+			a.button.large.purple:hover > h3 {
 				color: #fff;
 			}
-			a.button.large.green > p {
-				color: #19803b;
+			a.button.large.purple > p {
+				color: #9a59b5;
 			}
-			a.button.large.green:hover > p {
+			a.button.large.purple:hover > p {
 				color: #fff;
 			}
-				a.button.large.green > p > i {
-					color: #19803b;
+				a.button.large.purple > p > i {
+					color: #9a59b5;
 				}
-				a.button.large.green:hover > p > i {
+				a.button.large.purple:hover > p > i {
 					color: #fff;
 				}
 
