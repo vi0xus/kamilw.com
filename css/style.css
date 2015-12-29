@@ -6,10 +6,6 @@ body {
 	margin-top: 7px;
 }
 
-.container {
-	margin: 0 auto;
-}
-
 .linkbox {
 	margin-bottom: 7px;
 }
@@ -32,14 +28,43 @@ body {
 	}
 
 .imagebox {
+	position: relative;
+	margin-bottom: 7px;
 }
 	.imagebox a {
 		display: block;
 	}
 	.imagebox img {
 		width: 100%;
+		display: block;
 	}
-
+		.imagebox .detail-overlay {
+			display: none;
+			position: absolute;
+			top: 0;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			justify-content: center;
+			align-items: center;
+		}
+			.imagebox:hover .detail-overlay {
+				display: flex;
+			}
+		.imagebox .details {
+			width: 75%;
+			margin: 0 auto;
+		}
+		.imagebox .details .title {
+			text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+			font-family: 'Roboto';
+			font-size: 18px;
+			line-height: 28px;
+			color: #fff;
+			text-transform: uppercase;
+			text-align: center;
+			margin: 0;
+		}	
 
 .recommendations {
 	background-image: url('../images/scratches.png');
@@ -55,6 +80,7 @@ body {
 		line-height: 24px;
 		cursor: default;
 		letter-spacing: 1px;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 	}
 	.recommendations .slides {
 		display: block;
@@ -115,7 +141,10 @@ body {
 				font-size: 24px;
 				line-height: 24px;
 			}
-	.recommendations a {
+	.recommendations .links {
+		text-align: center;
+	}
+	.recommendations .links a {
 		color: #ccc;
 		text-decoration: none;
 	}
@@ -187,9 +216,9 @@ button {
 		background: #fff;
 		border-color: #555;
 		margin-bottom: 7px;
-		-webkit-transition: background-color 0.5s ease;
-		-o-transition: background-color 0.5s ease;
-		transition: background-color 0.5s ease;
+		-webkit-transition: background-color 0.4s ease;
+		-o-transition: background-color 0.4s ease;
+		transition: background-color 0.4s ease;
 	}
 		a.button.large:hover {
 			background-color: #555;
@@ -306,70 +335,6 @@ button {
 				a.button.large.pink:hover > p > i {
 					color: #fff;
 				}
-
-
-
-/* Utility Classes */
-
-/* Make element full width */
-.u-full-width {
-  width: 100%;
-  box-sizing: border-box; }
-
-/* Make sure elements don't run outside containers (great for images in columns) */
-.u-max-full-width {
-  max-width: 100%;
-  box-sizing: border-box; }
-
-/* Float either direction */
-.u-pull-right {
-  float: right; }
-.u-pull-left {
-  float: left; }
-
-.center {
-	margin: 0 auto;
-	text-align: center;
-}
-
-/* Clear a float */
-.u-cf {
-  content: "";
-  display: table;
-  clear: both; }
-
-
-.container {
-	max-width: 1000px;
-}
-
-.row.collapsed > .column:not(:first-child),
-.row.collapsed > .columns:not(:first-child) {
-	margin-left: 7px;
-	box-sizing: border-box;
-}
-	.row.collapsed > .one-third.column {
-		width: 328.66px;
-	}
-	.row.collapsed > .two-thirds.column {
-		width: 664.34px;
-	}
-	.row.collapsed .row.collapsed > .one-third.column {
-		width: 216.66px;
-	}
-	.row.collapsed .four.columns {
-		width: 250px;
-	}
-	.row.collapsed .eight.columns {
-		width: 743px;
-	}
-	.row.collapsed .five.columns {
-		width: 300px;
-	}
-	.row.collapsed .seven.columns {
-		width: 693px;
-	}
-
 
 .header-wrapper {
 	z-index: 2;
@@ -573,11 +538,39 @@ ul.nav {
 
 
 .homepage-gallery {
-	margin-bottom: 7px;
+	position: relative;
 }
-	.homepage-gallery {
-	
+	.homepage-gallery .slides {
+		margin-bottom: 0;
+		z-index: 3;
 	}
+		.homepage-gallery .slides .slide {
+			outline: none;
+		}
+
+	.homepage-gallery .arrows {
+		position: absolute;
+		top: 45%;
+		width: 100%;
+		z-index: 2;
+	}
+		.homepage-gallery .arrows .arrow {
+			position: relative;
+			font-size: 90px;
+			line-height: 90px;
+			color: #fff;
+			padding: 10px;
+			cursor: pointer;
+			color: #555;
+		}
+			.homepage-gallery .arrows .arrow.prev {
+				left: -51px;
+				float: left;
+			}
+			.homepage-gallery .arrows .arrow.next {
+				right: -51px;
+				float: right;
+			}
 
 .footer {
 }
