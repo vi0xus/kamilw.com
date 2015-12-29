@@ -182,29 +182,28 @@ button {
 	a.button.large {
 		width: 100%;
 		max-width: 100%;
-		height: 115px;
+		height: auto;
 		padding: 20px;
 		background: #fff;
 		border-color: #fff;
 		margin-bottom: 7px;
 	}
 		a.button.large:hover {
-			border-color: #252525;
-			background-image: url('../images/scratches.png');
+			background-color: #555;
 		}
 		a.button.large > h3 {
 			font-size: 22px;
 			line-height: 24px;
 			margin-bottom: 10px;
-			text-align: center;
+			text-align: left;
 			text-transform: none;
 			letter-spacing: 1px;
 		}
-		a.button.large:hover > h3 {
-			color: #fff;
-		}
+			a.button.large:hover > h3 {
+				color: #fff;
+			}
 			a.button.large > h3 > i {
-				float: left;
+				padding-right: 10px;
 			}
 		a.button.large > p {
 			font-family: 'Roboto';
@@ -217,12 +216,93 @@ button {
 			text-align: left;
 			letter-spacing: 0.2px;
 		}
-		a.button.large:hover > p {
-			color: #fff;
-		}
-			a.button.large > p > i {
-				color: #1EAEDB;
+			a.button.large:hover > p {
+				color: #fff;
 			}
+				a.button.large > p > i {
+					color: #555;
+				}
+				a.button.large:hover > p > i {
+					color: #fff;
+				}
+
+		a.button.large.blue {
+			background-color: #1eaedb;
+			border-color: #1eaedb;
+		}
+		a.button.large.blue:hover {
+			background-color: #fff;
+		}
+			a.button.large.blue > h3 {
+				color: #fff;
+			}
+			a.button.large.blue:hover > h3 {
+				color: #1eaedb;
+			}
+			a.button.large.blue > p {
+				color: #fff;
+			}
+			a.button.large.blue:hover > p {
+				color: #1eaedb;
+			}
+				a.button.large.blue > p > i {
+					color: #fff;
+				}
+				a.button.large.blue:hover > p > i {
+					color: #1eaedb;
+				}
+
+		a.button.large.purple {
+			background-color: #b8b3e4;
+			border-color: #b8b3e4;
+		}
+		a.button.large.purple:hover {
+			background-color: #fff;
+		}
+			a.button.large.purple > h3 {
+				color: #fff;
+			}
+			a.button.large.purple:hover > h3 {
+				color: #b8b3e4;
+			}
+			a.button.large.purple > p {
+				color: #fff;
+			}
+			a.button.large.purple:hover > p {
+				color: #b8b3e4;
+			}
+				a.button.large.purple > p > i {
+					color: #fff;
+				}
+				a.button.large.purple:hover > p > i {
+					color: #b8b3e4;
+				}
+
+		a.button.large.pink {
+			background-color: #ea4c89;
+			border-color: #ea4c89;
+		}
+		a.button.large.pink:hover {
+			background-color: #fff;
+		}
+			a.button.large.pink > h3 {
+				color: #fff;
+			}
+			a.button.large.pink:hover > h3 {
+				color: #ea4c89;
+			}
+			a.button.large.pink > p {
+				color: #fff;
+			}
+			a.button.large.pink:hover > p {
+				color: #ea4c89;
+			}
+				a.button.large.pink > p > i {
+					color: #fff;
+				}
+				a.button.large.pink:hover > p > i {
+					color: #ea4c89;
+				}
 
 
 
