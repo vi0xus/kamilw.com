@@ -314,11 +314,11 @@ ul.nav {
 		cursor: pointer;
 		box-sizing: border-box;
 	}
-	ul.nav > li.active > a,
-	ul.nav > li:hover > a {
-		background: #323232;
-		color: #fff;
-	}
+		ul.nav > li.active > a,
+		ul.nav > li:hover > a {
+			background: #323232;
+			color: #fff;
+		}
 	ul.nav > li.dropdown > ul.menu {
 		display: none;
 		position: absolute;
