@@ -187,6 +187,9 @@ button {
 		background: #fff;
 		border-color: #fff;
 		margin-bottom: 7px;
+		-webkit-transition: background-color 0.5s ease;
+		-o-transition: background-color 0.5s ease;
+		transition: background-color 0.5s ease;
 	}
 		a.button.large:hover {
 			background-color: #555;
