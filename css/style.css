@@ -255,6 +255,32 @@ button {
 					color: #fff;
 				}
 
+		a.button.large.green {
+			background-color: #fff;
+			border-color: #6fd055;
+		}
+		a.button.large.green:hover {
+			background-color: #6fd055;
+		}
+			a.button.large.green > h3 {
+				color: #6fd055;
+			}
+			a.button.large.green:hover > h3 {
+				color: #fff;
+			}
+			a.button.large.green > p {
+				color: #6fd055;
+			}
+			a.button.large.green:hover > p {
+				color: #fff;
+			}
+				a.button.large.green > p > i {
+					color: #6fd055;
+				}
+				a.button.large.green:hover > p > i {
+					color: #fff;
+				}
+
 		a.button.large.pink {
 			background-color: #fff;
 			border-color: #ea4c89;
