@@ -229,6 +229,34 @@ button {
 					color: #fff;
 				}
 
+		a.button.large.bluetwo {
+			background-color: #000;
+			border-color: #000;
+		}
+		a.button.large.bluetwo:hover {
+			background-color: #fff;
+			border-color: #1eaedb;
+		}
+			a.button.large.bluetwo > h3 {
+				color: #fff;
+			}
+			a.button.large.bluetwo:hover > h3 {
+				color: #1eaedb;
+			}
+			a.button.large.bluetwo > p {
+				color: #fff;
+			}
+			a.button.large.bluetwo:hover > p {
+				color: #1eaedb;
+			}
+				a.button.large.bluetwo > p > i {
+					color: #fff;
+				}
+				a.button.large.bluetwo:hover > p > i {
+					color: #1eaedb;
+				}
+
+
 		a.button.large.blue {
 			background-color: #1eaedb;
 			border-color: #1eaedb;
