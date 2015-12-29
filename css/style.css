@@ -54,6 +54,7 @@ body {
 		font-size: 18px;
 		line-height: 24px;
 		cursor: default;
+		letter-spacing: 1px;
 	}
 	.recommendations .slides {
 		display: block;
@@ -195,6 +196,7 @@ button {
 			line-height: 24px;
 			margin-bottom: 10px;
 			text-align: center;
+			text-transform: none;
 		}
 			a.button.large > h3 > i {
 				float: left;
