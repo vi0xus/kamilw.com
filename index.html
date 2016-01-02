@@ -293,8 +293,33 @@
 					<div class="arrow next" data-next><i class="fa fa-angle-right"></i></div>
 				</div>
 				<div class="links">
-					<a href="#" class="button dark inverse">Write your recommendation</a>
+					<a href="#" class="button dark inverse" data-write-recommendation>Write your recommendation</a>
 					<a href="#" class="button dark inverse">Read all recommendations</a>
+				</div>
+				<div class="write" data-recommendation-write>
+					<form action="#" method="post">
+						<div class="row">
+							<div class="four columns">
+								<label for="type" data-recommendation-type data-message="Please write about your recommendation here.">
+									<input type="radio" name="type" value="recommendation" checked>
+									Recommendation
+								</label>
+							</div>
+
+							<div class="four columns">
+								<label for="type" data-recommendation-type data-message="Please write about your success story here.">
+									<input type="radio" name="type" value="success">
+									Success Story
+								</label>
+							</div>
+						</div>
+						<textarea name="recommendationMessage" placeholder="Please write about your recommendation here." data-recommendation-textarea></textarea>
+						<div class="row">
+							<div class="two offset-by-ten columns">
+								<button class="dark">Submit <i class="fa fa-angle-right"></i></button>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 
@@ -401,6 +426,16 @@
 						scrollTop: 0
 					}, 500);
 				})
+
+				$('[data-recommendation-type]').on('click', function(e) {
+					$(this).children().attr('checked', true);
+					$('[data-recommendation-textarea]').attr('placeholder', $(this).data('message'));
+				});
+
+				$('[data-write-recommendation]').on('click', function(e) {
+					e.preventDefault();
+					$('[data-recommendation-write]').slideToggle(500);
+				});
 			});
 		</script>
 	</body>
