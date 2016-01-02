@@ -151,7 +151,17 @@ body {
 	.recommendations .write {
 		display: none;
 		background: #fff;
+		position: relative;
 	}
+		.recommendations .write .closer {
+			position: absolute;
+			right: 0;
+			padding: 10px;
+		}
+			.recommendations .write .closer i {
+				font-weight: normal;
+				font-size: 14px;
+			}
 		.recommendations .write form {
 			margin: 0 auto;
 			width: 840px;
@@ -161,8 +171,9 @@ body {
 			margin: 0;
 			text-transform: uppercase;
 			display: inline-block;
+			font-weight: normal;
 		}
-		.recommendations .write form input[type="checkbox"] {
+		.recommendations .write form input[type="radio"] {
 			margin-right: 15px;
 		}
 		.recommendations .write form textarea {

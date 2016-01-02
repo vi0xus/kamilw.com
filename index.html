@@ -297,6 +297,9 @@
 					<a href="#" class="button dark inverse">Read all recommendations</a>
 				</div>
 				<div class="write" data-recommendation-write>
+					<div class="closer">
+						<i class="fa fa-minus"></i>
+					</div>
 					<form action="#" method="post">
 						<div class="row">
 							<div class="four columns">
@@ -433,6 +436,11 @@
 				});
 
 				$('[data-write-recommendation]').on('click', function(e) {
+					e.preventDefault();
+					$('[data-recommendation-write]').slideToggle(500);
+				});
+
+				$('[data-write-recommendation-close]').on('click', function(e) {
 					e.preventDefault();
 					$('[data-recommendation-write]').slideToggle(500);
 				});
