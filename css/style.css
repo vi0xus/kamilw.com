@@ -191,6 +191,7 @@ body {
 			text-transform: uppercase;
 			display: inline-block;
 			font-weight: normal;
+			cursor: pointer;
 		}
 		.recommendations .write form input[type="radio"] {
 			margin-right: 15px;
@@ -242,6 +243,7 @@ button {
 		a.button.dark:hover,
 		button.dark:hover {
 			border-color: #555;
+			transition: border-color 0.5s ease;
 		}
 	a.button.login,
 	button.login {
@@ -252,6 +254,7 @@ button {
 		a.button.login:hover,
 		button.login:hover {
 			border-color: #fff;
+			transition: border-color 0.5s ease;
 		}
 
 	a.button.dark.inverse,
@@ -265,6 +268,7 @@ button {
 		button.dark.inverse.active {
 			background-color: #323232;
 			border-color: #555;
+			transition: all 0.5s ease;
 		}
 
 	a.button.large {
@@ -275,9 +279,9 @@ button {
 		background: #fff;
 		border-color: #555;
 		margin-bottom: 7px;
-		-webkit-transition: background-color 0.4s ease;
-		-o-transition: background-color 0.4s ease;
-		transition: background-color 0.4s ease;
+		-webkit-transition: background-color 0.5s ease;
+		-o-transition: background-color 0.5s ease;
+		transition: background-color 0.5s ease;
 	}
 		a.button.large:hover {
 			background-color: #555;
@@ -692,9 +696,11 @@ ul.nav {
 	}
 
 	.footer .footer-bottom {
-		background-color: #2A2A2A;
-		
+		background-color: #2A2A2A;	
 	}
+		.footer .footer-bottom .logo-wrapper {
+			margin-left: 15px;
+		}
 		.footer .footer-bottom p.copyright {
 			color: #aaa;
 			padding-top: 25px;
