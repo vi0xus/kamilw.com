@@ -152,15 +152,25 @@ body {
 		display: none;
 		background: #fff;
 		position: relative;
+		overflow: hidden;
 	}
 		.recommendations .write .closer {
 			position: absolute;
-			right: 0;
+			right: -30px;
+			top: -25px;
 			padding: 10px;
+			background-color: #f1f1f1;
+			transform: rotate(40deg);
+			width: 60px;
+			height: 40px;
 		}
 			.recommendations .write .closer i {
 				font-weight: normal;
 				font-size: 14px;
+				transform: rotate(-40deg);
+				position: relative;
+				top: 25px;
+				left: 25px;
 			}
 		.recommendations .write form {
 			margin: 0 auto;
@@ -241,7 +251,9 @@ button {
 		border-color: transparent;
 	}
 		a.button.dark.inverse:hover,
-		button.dark.inverse:hover {
+		a.button.dark.inverse.active,
+		button.dark.inverse:hover,
+		button.dark.inverse.active {
 			background-color: #323232;
 			border-color: #555;
 		}

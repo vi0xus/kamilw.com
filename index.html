@@ -293,11 +293,11 @@
 					<div class="arrow next" data-next><i class="fa fa-angle-right"></i></div>
 				</div>
 				<div class="links">
-					<a href="#" class="button dark inverse" data-write-recommendation>Write your recommendation</a>
-					<a href="#" class="button dark inverse">Read all recommendations</a>
+					<a href="#" class="button dark inverse" data-recommendation-write-button>Write your recommendation <i class="fa fa-angle-down"></i></a>
+					<a href="#" class="button dark inverse">Read all recommendations <i class="fa fa-angle-right"></i></a>
 				</div>
 				<div class="write" data-recommendation-write>
-					<div class="closer">
+					<div class="closer" data-recommendation-close>
 						<i class="fa fa-minus"></i>
 					</div>
 					<form action="#" method="post">
@@ -435,13 +435,15 @@
 					$('[data-recommendation-textarea]').attr('placeholder', $(this).data('message'));
 				});
 
-				$('[data-write-recommendation]').on('click', function(e) {
+				$('[data-recommendation-write-button]').on('click', function(e) {
 					e.preventDefault();
+					$(this).toggleClass('active');
 					$('[data-recommendation-write]').slideToggle(500);
 				});
 
-				$('[data-write-recommendation-close]').on('click', function(e) {
+				$('[data-recommendation-close]').on('click', function(e) {
 					e.preventDefault();
+					$('[data-recommendation-write-button]').removeClass('active');
 					$('[data-recommendation-write]').slideToggle(500);
 				});
 			});
