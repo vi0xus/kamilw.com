@@ -39,7 +39,8 @@ body {
 		display: block;
 	}
 		.imagebox .detail-overlay {
-			display: none;
+			display: flex;
+			opacity: 0;
 			position: absolute;
 			top: 0;
 			height: 100%;
@@ -49,7 +50,8 @@ body {
 			align-items: center;
 		}
 			.imagebox:hover .detail-overlay {
-				display: flex;
+				opacity: 1;
+				transition: opacity 0.5s ease;
 			}
 		.imagebox .details {
 			width: 75%;
@@ -598,6 +600,7 @@ ul.nav {
 	.header-slideshow .slides ul.slick-dots > li:hover > button:before,
 	.header-slideshow .slides ul.slick-dots > li.slick-active > button:before {
 		border-color: #ea4c89;
+		transition: border-color 0.5s ease;
 	}
 
 
