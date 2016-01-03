@@ -157,7 +157,7 @@ body {
 		.recommendations .write .closer {
 			position: absolute;
 			right: -30px;
-			top: -25px;
+			top: -28px;
 			padding: 10px;
 			background-color: #f1f1f1;
 			transform: rotate(40deg);
@@ -166,11 +166,17 @@ body {
 		}
 			.recommendations .write .closer i {
 				font-weight: normal;
-				font-size: 14px;
+				font-size: 10px;
 				transform: rotate(-40deg);
 				position: relative;
-				top: 25px;
-				left: 25px;
+				top: 19px;
+				left: 29px;
+			}
+		.recommendations .write .closer:hover {
+			background-color: #ea4c89;
+		}
+			.recommendations .write .closer:hover i {
+				color: #fff;
 			}
 		.recommendations .write form {
 			margin: 0 auto;
