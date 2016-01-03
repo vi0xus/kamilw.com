@@ -163,17 +163,19 @@ body {
 			transform: rotate(40deg);
 			width: 60px;
 			height: 40px;
+			cursor: pointer;
 		}
 			.recommendations .write .closer i {
 				font-weight: normal;
 				font-size: 10px;
 				transform: rotate(-40deg);
 				position: relative;
-				top: 19px;
-				left: 29px;
+				top: 20px;
+				left: 21px;
 			}
 		.recommendations .write .closer:hover {
 			background-color: #ea4c89;
+			transition: background-color 0.5s ease;
 		}
 			.recommendations .write .closer:hover i {
 				color: #fff;
