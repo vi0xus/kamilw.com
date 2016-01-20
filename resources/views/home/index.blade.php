@@ -5,13 +5,13 @@
     <div class="container">
         <div class="trio-box row">
             <div class="one-third column">
-                <a href="#" class="button large pink">
+                <a href="{{ route('about.index') }}" class="button large pink">
                     <h3><i class="fa fa-street-view"></i> Meet The Artist</h3>
                     <p>Learn about the artist, experience, workflow, and interest. <i class="fa fa-chevron-circle-right"></i></p>
                 </a>
             </div>
             <div class="one-third column">
-                <a href="#" class="button large blue">
+                <a href="{{ route('contact.index') }}" class="button large blue">
                     <h3><i class="fa fa-paste"></i> Lets Work Together</h3>
                     <p>Find out how working side by side with a designer can improve your business. <i class="fa fa-chevron-circle-right"></i></p>
                 </a>
@@ -164,10 +164,10 @@
                 <h4>General Information</h4>
                 <ul>
                     <li><a href="#">Success Stories &amp; Recommendations</a></li>
-                    <li><a href="#">About the Arist</a></li>
-                    <li><a href="#">Contact Me</a></li>
-                    <li><a href="#">Resum&egrave;</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="{{ route('about.index') }}">About the Arist</a></li>
+                    <li><a href="{{ route('contact.index') }}">Contact Me</a></li>
+                    <li><a href="{{ route('about.resume') }}">Resum&egrave;</a></li>
+                    <li><a href="{{ route('blog.index') }}">Blog</a></li>
                 </ul>
             </div>
             <div class="one-third column">
@@ -189,7 +189,7 @@
         </div>
         <div class="footer-bottom row">
             <div class="two columns">
-                <a href="#" class="logo-wrapper">
+                <a href="{{ route('index') }}" class="logo-wrapper">
                     <div class="logo white"></div>
                 </a>
             </div>
