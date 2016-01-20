@@ -252,6 +252,7 @@ button {
 		background-color: transparent;
 		border-color: #555;
 		color: #fff;
+		width: 100%;
 	}
 		a.button.login:hover,
 		button.login:hover {

@@ -21,7 +21,7 @@
             <div class="container header">
                 <div class="row">
                     <div class="five columns">
-                        <a href="#" class="logo-wrapper">
+                        <a href="{{ route('index') }}" class="logo-wrapper">
                             <h1 class="logo blue">The Art of Kamil Wierciszewski</h1>
                         </a>
                     </div>
