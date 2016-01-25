@@ -6,6 +6,22 @@ body {
 	margin-top: 7px;
 }
 
+.page > .container.content {
+	background: #fff;
+	padding: 20px;
+}
+
+.resume-download {
+	float: right;
+	text-decoration: none;
+}
+
+form {}
+	form input[type="text"],
+	form input[type="email"] {
+		border-radius: 0px;
+	}
+
 .linkbox {
 	margin-bottom: 7px;
 }

@@ -2,7 +2,8 @@
 
 @section('content')
 <div class="page">
-    <div class="container">
+    <div class="container content">
+        <a class="resume-download" href="/files/kamil_w_resume.pdf" target="_blank"><i class="fa fa-download"></i> Download Resum&egrave;</a>
         <h3>Design Experience</h3>
 
         <strong>Freelance | New York, NY</strong>

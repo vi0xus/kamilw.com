@@ -36,10 +36,10 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#">About <i class="fa fa-angle-down"></i></a>
+                                <a href="{{ route('about.index') }}">About <i class="fa fa-angle-down"></i></a>
                                 <ul class="panel">
                                     <li><a href="{{ route('about.index') }}">The Artist</a></li>
-                                    <li><a href="{{ route('about.resume') }}">Resume</a></li>
+                                    <li><a href="{{ route('about.resume') }}">Resum&egrave;</a></li>
                                 </ul>
                             </li>
                             <li><a href="{{ route('blog.index') }}">Blog</a></li>
@@ -87,6 +87,8 @@
         </div>
 
         @yield('content')
+
+        @include('layouts.footer')
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         {!! Html::script('assets/js/slick.min.js') !!}
