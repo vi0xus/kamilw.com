@@ -15,6 +15,10 @@ h4 {}
 h5 {}
 h6 {}
 
+.right {
+	float: right;
+}
+
 .content ul {
 	list-style-position: outside;
 	padding-left: 20px;
