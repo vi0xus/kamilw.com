@@ -3,10 +3,10 @@
 @section('content')
 <div class="page">
     <div class="container content">
-        <a class="resume-download button dark" href="/files/kamil_w_resume.pdf" target="_blank"><i class="fa fa-download"></i> Download Resum&egrave; <i class="fa fa-angle-right"></i></a>
+        <a class="resume-download button dark" href="/files/kamil_w_resume.pdf" target="_blank"><i class="fa fa-download"></i> Download Resum&egrave;</a>
 
         <div class="row">
-            <div class="eight columns">
+            <div class="nine columns">
                 <h3 class="section-title">Design Experience</h3>
                 <strong>Freelance | New York, NY</strong>
                 <ul>

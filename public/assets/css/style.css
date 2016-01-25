@@ -15,12 +15,20 @@ h4 {}
 h5 {}
 h6 {}
 
-ul.inline > li {
-	display: inline-block;
-	margin-right: 15px;
-	width: 30%;
-	vertical-align: top;
+.content ul {
+	list-style-position: outside;
+	padding-left: 20px;
 }
+
+.content ul.inline {
+	padding: 0;
+}
+	.content ul.inline > li {
+		display: inline-block;
+		margin-right: 10px;
+		width: 30%;
+		vertical-align: top;
+	}
 
 .page {
 	margin-top: 7px;
@@ -31,10 +39,12 @@ ul.inline > li {
 	}
 
 .page-title {
+	padding-bottom: 4px;
 	border-bottom: 1px solid #252525;
 }
 
 .section-title {
+	padding-bottom: 4px;
 	border-bottom: 1px solid #252525;
 }
 
