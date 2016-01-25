@@ -3,73 +3,57 @@
 @section('content')
 <div class="page">
     <div class="container content">
-        <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
-            {!! csrf_field() !!}
+        <div class="row">
+            <div class="six columns">
+                <h2 class="page-title">Join us</h2>
 
-            <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                <label class="col-md-4 control-label">Name</label>
+                <form role="form" method="post" action="{{ url('/register') }}">
+                    {!! csrf_field() !!}
 
-                <div class="col-md-6">
+                    <label for="name">Name
+                        @if ($errors->has('name'))
+                        <span class="error">
+                            {{ $errors->first('name') }}
+                        </span>
+                        @endif
+                    </label>
                     <input type="text" class="form-control" name="name" value="{{ old('name') }}">
 
-                    @if ($errors->has('name'))
-                        <span class="help-block">
-                            <strong>{{ $errors->first('name') }}</strong>
+                    <label for="email">E-Mail Address
+                        @if ($errors->has('email'))
+                        <span class="error">
+                            {{ $errors->first('email') }}
                         </span>
-                    @endif
-                </div>
-            </div>
-
-            <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                <label class="col-md-4 control-label">E-Mail Address</label>
-
-                <div class="col-md-6">
+                        @endif
+                    </label>
                     <input type="email" class="form-control" name="email" value="{{ old('email') }}">
 
-                    @if ($errors->has('email'))
-                        <span class="help-block">
-                            <strong>{{ $errors->first('email') }}</strong>
+                    <label for="password">Password
+                        @if ($errors->has('password'))
+                        <span class="error">
+                            {{ $errors->first('password') }}
                         </span>
-                    @endif
-                </div>
-            </div>
-
-            <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                <label class="col-md-4 control-label">Password</label>
-
-                <div class="col-md-6">
+                        @endif
+                    </label>
                     <input type="password" class="form-control" name="password">
 
-                    @if ($errors->has('password'))
-                        <span class="help-block">
-                            <strong>{{ $errors->first('password') }}</strong>
+                    <label for="password_confirmation">Confirm Password
+                        @if ($errors->has('password_confirmation'))
+                        <span class="error">
+                            {{ $errors->first('password_confirmation') }}
                         </span>
-                    @endif
-                </div>
-            </div>
-
-            <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
-                <label class="col-md-4 control-label">Confirm Password</label>
-
-                <div class="col-md-6">
+                        @endif
+                    </label>
                     <input type="password" class="form-control" name="password_confirmation">
 
-                    @if ($errors->has('password_confirmation'))
-                        <span class="help-block">
-                            <strong>{{ $errors->first('password_confirmation') }}</strong>
-                        </span>
-                    @endif
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-md-6 col-md-offset-4">
-                    <button type="submit" class="btn btn-primary">
-                        <i class="fa fa-btn fa-user"></i>Register
+                    <button type="submit" class="right">
+                        <i class="fa fa-btn fa-user"></i> Sign up
                     </button>
-                </div>
+
+                    <a href="{{ url('/login') }}">Already have an account?</a>
+                </form>
             </div>
-        </form>
+        </div>
     </div>
 </div>
 @endsection

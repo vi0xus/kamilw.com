@@ -26,7 +26,7 @@ class PagesController extends Controller
 
     public function sendEmail(Request $request)
     {
-    	
+    	// 
     }
 
     public function blog()

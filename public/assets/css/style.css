@@ -15,6 +15,16 @@ h4 {}
 h5 {}
 h6 {}
 
+hr {
+	margin-top: 0.7rem;
+	margin-bottom: 0.7rem;
+}
+
+.content hr {
+	margin-top: 3rem;
+	margin-bottom: 3.5rem;
+}
+
 .right {
 	float: right;
 }
@@ -23,7 +33,7 @@ h6 {}
 	list-style-position: outside;
 	padding-left: 20px;
 }
-.panel { display:block !important;}
+
 ul.inline {
 	padding: 0;
 }
@@ -94,6 +104,9 @@ form {}
 		width: 100%;
 		border-radius: 0px !important;
 	}
+	form input.has-error {
+		border-color: #ea4c89;
+	}
 	form input:hover,
 	form textarea:hover {
 		border-color: #ea4c89;
@@ -110,6 +123,12 @@ form {}
 
 	form label > input {
 		width: auto;
+	}
+	form .error {
+		display: inline-block;
+		color: #ea4c89;
+		font-size: 1.2rem;
+		float: right;
 	}
 
 .linkbox {
@@ -617,10 +636,6 @@ ul.nav {
 		}
 		ul.nav > li.dropdown > div.panel .links a:hover {
 			text-decoration: underline;
-		}
-		ul.nav > li.dropdown > div.panel > hr {
-			margin-top: .7rem;
-			margin-bottom: .7rem;
 		}
 		ul.nav > li.dropdown > div.panel > ul {
 			margin: 0;

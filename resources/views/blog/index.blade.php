@@ -3,7 +3,8 @@
 @section('content')
 <div class="page">
     <div class="container content">
-        <h3>Blog</h3>
+        <h2 class="page-title">Blog</h2>
+        <p>Coming soon</p>
     </div>
 </div>
 @endsection

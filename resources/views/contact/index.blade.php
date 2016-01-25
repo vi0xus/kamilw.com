@@ -3,7 +3,7 @@
 @section('content')
 <div class="page">
     <div class="container content">
-        <h2 class="page-title">Contact</h2>
+        <h2 class="page-title">Tell Me About Your Project</h2>
 
 		<div class="six columns">
 			<form class="full" method="post" action="{{ route('contact.index') }}">
@@ -24,7 +24,7 @@
 				<label for="subject">Subject: </label>
 				<input type="text" name="subject" placeholder="Hi Kamil!">
 
-				<label for="body">Message*: </label>
+				<label for="body">Project Description*: </label>
 				<textarea name="body" placeholder="Type your message." required></textarea>
 
 				<small>Fields marked with an asterisk(*) are required.</small>

@@ -48,11 +48,12 @@
                             <li class="dropdown">
                                 <a href="{{ url('/login') }}">Login <i class="fa fa-angle-down"></i></a>
                                 <div class="panel">
-                                    <form action="login" method="post">
-                                        <input type="email" name="email" placeholder="Your Email">
-                                        <input type="password" name="password" placeholder="Password">
-                                        <button class="login">Login</button>
-                                        <a href="{{ url('/register') }}" class="button login">Sign Up</a>
+                                    <form action="{{ url('/login') }}" method="post">
+                                        {!! csrf_field() !!}
+                                        <input type="email" name="email" placeholder="Your Email" required>
+                                        <input type="password" name="password" placeholder="Password" required>
+                                        <button class="login"><i class="fa fa-sign-in"></i> Login</button>
+                                        <a href="{{ url('/register') }}" class="button login"><i class="fa fa-user"></i> Sign Up</a>
                                         <div class="links">
                                             <a href="{{ url('/password/reset') }}">Forgot password?</a>
                                         </div>
@@ -67,7 +68,14 @@
                                 </div>
                             </li>
                             @else
-                            <li><a href="#">{{ Auth::user()->name }}</a></li>
+                            <li class="dropdown">
+                                <a href="#">{{ Auth::user()->name }}</a>
+                                <ul class="panel">
+                                    <li><a href="#">Profile</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="{{ url('/logout') }}">Logout</a></li>
+                                </ul>
+                            </li>   
                             @endif
                         </ul>
                     </div>
