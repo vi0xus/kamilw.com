@@ -5,7 +5,7 @@
             <ul>
                 <li><a href="#">Success Stories &amp; Recommendations</a></li>
                 <li><a href="{{ route('about.index') }}">About the Arist</a></li>
-                <li><a href="{{ route('contact.index') }}">Contact Me</a></li>
+                <li><a href="{{ route('contact.message') }}">Contact Me</a></li>
                 <li><a href="{{ route('about.resume') }}">Resum&egrave;</a></li>
                 <li><a href="{{ route('blog.index') }}">Blog</a></li>
             </ul>
@@ -21,10 +21,10 @@
         </div>
         <div class="one-third column">
             <h4>Subscribe to Newsletters</h4>
-            <form class="newsletter" action="newsletter/signup" method="get">
-                <input type="email" name="email" placeholder="Your Email">
+            {!! Form::open(['route' => 'newsletter.signup']) !!}
+                {!! Form::email('email', '', ['placeholder' => 'Your Email', 'required']) !!}
                 <button class="dark">Subscribe</button>
-            </form>
+            {!! Form::close() !!}
         </div>
     </div>
     <div class="footer-bottom row">

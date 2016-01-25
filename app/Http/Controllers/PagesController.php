@@ -18,16 +18,6 @@ class PagesController extends Controller
     {
     	return view('about.index');
     }
-    
-    public function contact()
-    {
-    	return view('contact.index');
-    }
-
-    public function sendEmail(Request $request)
-    {
-    	// 
-    }
 
     public function blog()
     {

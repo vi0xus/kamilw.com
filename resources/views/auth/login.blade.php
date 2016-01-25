@@ -26,9 +26,7 @@
 
                     <label><input type="checkbox" name="remember"> Remember Me</label>
 
-                    <button type="submit" class="right">
-                        <i class="fa fa-btn fa-sign-in"></i> Log me in
-                    </button>
+                    <button type="submit" class="right">Log me in</button>
 
                     <a href="{{ url('/register') }}">Dont have an account?</a><br>
                     <a href="{{ url('/password/reset') }}">Forgot Your Password?</a><br>

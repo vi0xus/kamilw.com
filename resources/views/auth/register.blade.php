@@ -3,10 +3,10 @@
 @section('content')
 <div class="page">
     <div class="container content">
+        <h2 class="page-title">Join us</h2>
+
         <div class="row">
             <div class="six columns">
-                <h2 class="page-title">Join us</h2>
-
                 <form role="form" method="post" action="{{ url('/register') }}">
                     {!! csrf_field() !!}
 
@@ -46,9 +46,7 @@
                     </label>
                     <input type="password" class="form-control" name="password_confirmation">
 
-                    <button type="submit" class="right">
-                        <i class="fa fa-btn fa-user"></i> Sign up
-                    </button>
+                    <button type="submit" class="right">Sign up</button>
 
                     <a href="{{ url('/login') }}">Already have an account?</a>
                 </form>

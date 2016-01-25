@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "12c3c92b6caaba2c8e09172b9a4b5aa9",
-    "content-hash": "5a5ebd2d9df9ca019ecf5436592a52bd",
+    "hash": "8d89bed81240c54a8c4ac1bbdacdaa01",
+    "content-hash": "59f1fc1f6c1ec13be6eca59b25274850",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -308,7 +308,7 @@
         },
         {
             "name": "laracasts/flash",
-            "version": "dev-master",
+            "version": "1.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laracasts/flash.git",
@@ -3100,9 +3100,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "laracasts/flash": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

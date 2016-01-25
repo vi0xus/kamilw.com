@@ -11,7 +11,7 @@
                 </a>
             </div>
             <div class="one-third column">
-                <a href="{{ route('contact.index') }}" class="button large blue">
+                <a href="{{ route('contact.message') }}" class="button large blue">
                     <h3><i class="fa fa-paste"></i> Lets Work Together</h3>
                     <p>Find out how working side by side with a designer can improve your business. <i class="fa fa-chevron-circle-right"></i></p>
                 </a>
@@ -57,7 +57,13 @@
                             </div>
                         </div>
                         <div class="row">
+                            <!-- <div class="one-third column">
+                                
+                            </div>
                             <div class="one-third column">
+                                
+                            </div> -->
+                            <div class="offset-by-two-thirds one-third column">
                                 <div class="imagebox">
                                     <a href="#">
                                         <img src="assets/work/watches.jpg">
@@ -68,12 +74,6 @@
                                         </div>
                                     </a>
                                 </div>
-                            </div>
-                            <div class="one-third column">
-                                
-                            </div>
-                            <div class="one-third column">
-                                
                             </div>
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                 <h3>The answer to success starts with a great design!</h3>
             </div>
             <div class="four columns">
-                <a href="#" class="button dark">See All Artwork <i class="fa fa-angle-right"></i></a>
+                <a href="{{ route('art.index') }}" class="button dark">See All Artwork <i class="fa fa-angle-right"></i></a>
             </div>
         </div>
     </div>

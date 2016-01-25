@@ -69,4 +69,6 @@ $(document).ready(function() {
         $('[data-recommendation-write-button]').removeClass('active');
         $('[data-recommendation-write]').slideToggle(500);
     });
+
+    $('[data-notification]').delay(3000).slideUp(500);
 });

@@ -34,6 +34,16 @@ hr {
 	padding-left: 20px;
 }
 
+.notification {
+	background-color: #2A2A2A;
+	padding: 15px;
+	margin-bottom: 10px;
+	color: #fff;
+	font-size: 1.6rem;
+	text-align: center;
+	cursor: pointer;
+}
+
 ul.inline {
 	padding: 0;
 }
@@ -120,6 +130,9 @@ form {}
 	form button {
 		border-radius: 0px !important;
 	}
+	form button:hover {
+		border-color: #ea4c89;
+	}
 
 	form label > input {
 		width: auto;
@@ -129,6 +142,7 @@ form {}
 		color: #ea4c89;
 		font-size: 1.2rem;
 		float: right;
+		vertical-align: middle;
 	}
 
 .linkbox {

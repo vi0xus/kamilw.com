@@ -32,7 +32,7 @@
 				<p>My current Interests include 3d graphics, special effects ( SFX ), game design, Texturing, Modeling, and Animation.</p>
 				<p>Programs and categories that I am involved with are 3d graphics programs - Maya, Blender, SFX - after effects, cinema 4d, and Unreal engine. </p>
 
-				<a class="button" href="{{ route('contact.index') }}">Contact Me</a>&nbsp;&nbsp;&nbsp; <a class="button" href="{{ route('about.resume') }}">View My Resum&egrave;</a>
+				<a class="button" href="{{ route('contact.message') }}">Contact Me</a>&nbsp;&nbsp;&nbsp; <a class="button" href="{{ route('about.resume') }}">View My Resum&egrave;</a>
     		</div>
     	</div>
     </div>
