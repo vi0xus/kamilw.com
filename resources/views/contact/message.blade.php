@@ -7,7 +7,7 @@
 
 		<div class="row">
 			<div class="six columns">
-				<form class="full" method="post" action="{{ route('contact.message') }}">
+				{!! Form::open(['route' => 'contact.message']) !!}
 					{!! csrf_field() !!}
 
 					<label for="name">Your Name*:
@@ -54,7 +54,7 @@
 					<button type="submit" class="right">Send Message</button>
 
 					<a href="{{ route('contact.project') }}">Want to talk about a project idea?</a>
-				</form>
+				{!! Form::close() !!}
 			</div>
 		</div>
 	</div>
