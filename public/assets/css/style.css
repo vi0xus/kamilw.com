@@ -23,16 +23,40 @@ h6 {}
 	list-style-position: outside;
 	padding-left: 20px;
 }
-
-.content ul.inline {
+.panel { display:block !important;}
+ul.inline {
 	padding: 0;
 }
-	.content ul.inline > li {
+	ul.inline > li {
+		display: inline-block;
+	}
+	ul.inline.3-columns > li {
 		display: inline-block;
 		margin-right: 10px;
 		width: 30%;
 		vertical-align: top;
 	}
+
+ul.social {
+	padding-top: 5px;
+	width: 100%;
+	text-align: center;
+}
+	ul.social li {
+		width: 23%;
+		text-align: center;
+		font-size: 1.4rem;
+		margin: 0;
+	}
+		ul.social li > a {
+			padding: 12px;
+		}
+		ul.social li > a > i {
+			color: #fff;
+		}
+		ul.social li > a:hover > i {
+			color: #1eaedb;
+		}
 
 .page {
 	margin-top: 7px;
@@ -72,7 +96,7 @@ form {}
 	}
 	form input:hover,
 	form textarea:hover {
-		border-color: #888;
+		border-color: #ea4c89;
 	}
 	form textarea {
 		width: 100%;
@@ -82,6 +106,10 @@ form {}
 	}
 	form button {
 		border-radius: 0px !important;
+	}
+
+	form label > input {
+		width: auto;
 	}
 
 .linkbox {
@@ -570,25 +598,32 @@ ul.nav {
 		ul.nav > li.dropdown:hover > .panel {
 			display: block;
 		}
-	ul.nav > li.dropdown > form.panel {
+	ul.nav > li.dropdown > div.panel {
 		padding: 15px;
 	}
-		ul.nav > li.dropdown > form.panel input {
+		ul.nav > li.dropdown > div.panel input {
 			width: 100%;
 			border-radius: 0;
 		}
-		ul.nav > li.dropdown > form.panel button {
+		ul.nav > li.dropdown > div.panel button {
 			width: 100%;
 		}
-		ul.nav > li.dropdown > form.panel .links {
+		ul.nav > li.dropdown > div.panel .links {
 			text-align: right;
 		}
-		ul.nav > li.dropdown > form.panel .links a {
+		ul.nav > li.dropdown > div.panel .links a {
 			color: #e3e3e3;
 			text-decoration: none;
 		}
-		ul.nav > li.dropdown > form.panel .links a:hover {
+		ul.nav > li.dropdown > div.panel .links a:hover {
 			text-decoration: underline;
+		}
+		ul.nav > li.dropdown > div.panel > hr {
+			margin-top: .7rem;
+			margin-bottom: .7rem;
+		}
+		ul.nav > li.dropdown > div.panel > ul {
+			margin: 0;
 		}
 	ul.nav > li.dropdown > ul.panel > li {
 		list-style: none;

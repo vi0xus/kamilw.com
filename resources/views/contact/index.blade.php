@@ -9,11 +9,17 @@
 			<form class="full" method="post" action="{{ route('contact.index') }}">
 				{!! csrf_field() !!}
 
+				<label for="name">Your Name*:</label>
+				<input type="text" name="name" placeholder="Your name">
+
+				<label for="phone">Your Phone #*:</label>
+				<input type="text" name="phone" placeholder="555 555 5555">
+
+				<label for="from">Your Email*: </label>
+				<input type="email" name="from" placeholder="Your email" required>
+
 				<label for="to">To: </label>
 				<input type="email" name="to" placeholder="kamil_w@rocketmail.com" disabled readonly>
-
-				<label for="from">From*: </label>
-				<input type="email" name="from" placeholder="Your email" required>
 
 				<label for="subject">Subject: </label>
 				<input type="text" name="subject" placeholder="Hi Kamil!">
@@ -24,7 +30,7 @@
 				<small>Fields marked with an asterisk(*) are required.</small>
 				<br>
 				<br>
-				<button class="right button">Send Message <i class="fa fa-envelope-o"></i></button>
+				<button type="submit" class="button">Send Message <i class="fa fa-envelope-o"></i></button>
 			</form>
 		</div>
     </div>

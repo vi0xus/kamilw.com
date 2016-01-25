@@ -47,15 +47,24 @@
                             @if (Auth::guest())
                             <li class="dropdown">
                                 <a href="{{ url('/login') }}">Login <i class="fa fa-angle-down"></i></a>
-                                <form class="panel" action="login" method="post">
-                                    <input type="email" name="email" placeholder="Email">
-                                    <input type="password" name="password" placeholder="Password">
-                                    <button class="login">Login</button>
-                                    <a href="{{ url('/register') }}" class="button login">Sign Up</a>
-                                    <div class="links">
-                                        <a href="{{ url('/password/reset') }}">Forgot password?</a>
-                                    </div>
-                                </form>
+                                <div class="panel">
+                                    <form action="login" method="post">
+                                        <input type="email" name="email" placeholder="Your Email">
+                                        <input type="password" name="password" placeholder="Password">
+                                        <button class="login">Login</button>
+                                        <a href="{{ url('/register') }}" class="button login">Sign Up</a>
+                                        <div class="links">
+                                            <a href="{{ url('/password/reset') }}">Forgot password?</a>
+                                        </div>
+                                    </form>
+                                    <hr>
+                                    <ul class="inline social">
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                    </ul>
+                                </div>
                             </li>
                             @else
                             <li><a href="#">{{ Auth::user()->name }}</a></li>

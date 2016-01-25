@@ -76,7 +76,7 @@
                 </ul>
 
                 <h3 class="section-title">Skills</h3>
-                <ul class="inline">
+                <ul class="inline 3-columns">
                     <li>Adobe InDesign</li>
                     <li>Adobe Illustrator</li>
                     <li>Adobe Photoshop</li>
