@@ -17,8 +17,9 @@ body {
 }
 
 form {}
-	form input[type="text"],
-	form input[type="email"] {
+	form input[type="text"].form-group,
+	form input[type="password"].form-group,
+	form input[type="email"].form-group {
 		border-radius: 0px;
 	}
 
