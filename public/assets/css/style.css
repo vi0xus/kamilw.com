@@ -47,6 +47,14 @@ h6 {}
 	border-bottom: 1px solid #252525;
 }
 
+h2 > span {
+	font-size: 2rem;
+	padding-left: 15px;
+	margin-left: 17px;
+	border-left: 1px solid #252525;
+	vertical-align: middle;
+}
+
 .section-title {
 	padding-bottom: 4px;
 	border-bottom: 1px solid #252525;
