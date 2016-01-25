@@ -22,7 +22,8 @@
                     <li>Developed mood boards using colors and typefaces</li>
                     <li>Assisted team members in development of The Soldiers Story book</li>
                     <li>Photographed and prepared product design photography for commercial use</li>
-                    <li>Collaborated with data banks representatives to license photographic images Utilized research during book development</li>
+                    <li>Collaborated with data banks representatives to license photographic images</li>
+                    <li> Utilized research during book development</li>
                 </ul>
 
                 <strong>Data Vision | Queens, NY</strong>
