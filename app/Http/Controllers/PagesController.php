@@ -24,6 +24,11 @@ class PagesController extends Controller
     	return view('contact.index');
     }
 
+    public function sendEmail(Request $request)
+    {
+    	
+    }
+
     public function blog()
     {
     	return view('blog.index');

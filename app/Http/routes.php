@@ -10,6 +10,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('blog', ['as' => 'blog.index', 'uses' => 'PagesController@blog']);
 
     Route::get('contact', ['as' => 'contact.index', 'uses' => 'PagesController@contact']);
+    Route::post('contact', ['as' => 'contact.send', 'uses' => 'PagesController@sendEmail']);
 
     Route::get('about', ['as' => 'about.index', 'uses' => 'PagesController@about']);
     Route::get('about/resume', ['as' => 'about.resume', 'uses' => 'PagesController@resume']);

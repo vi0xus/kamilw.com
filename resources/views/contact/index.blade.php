@@ -6,13 +6,25 @@
         <h2 class="page-title">Contact</h2>
 
 		<div class="six columns">
-			<form class="full">
-				<input type="text" placeholder="kamil_w@rocketmail.com" disabled readonly>
-				<input type="text" placeholder="Your email">
-				<textarea>
-					Type your message.
-				</textarea>
-				<button class="button submit">Send</button>
+			<form class="full" method="post" action="{{ route('contact.index') }}">
+				{!! csrf_field() !!}
+
+				<label for="to">To: </label>
+				<input type="email" name="to" placeholder="kamil_w@rocketmail.com" disabled readonly>
+
+				<label for="from">From*: </label>
+				<input type="email" name="from" placeholder="Your email" required>
+
+				<label for="subject">Subject: </label>
+				<input type="text" name="subject" placeholder="Hi Kamil!">
+
+				<label for="body">Message*: </label>
+				<textarea name="body" placeholder="Type your message." required></textarea>
+
+				<small>Fields marked with an asterisk(*) are required.</small>
+				<br>
+				<br>
+				<button class="right button">Send Message <i class="fa fa-envelope-o"></i></button>
 			</form>
 		</div>
     </div>
